@@ -25,7 +25,11 @@ SECRET_KEY = '*^gi*#@h1nupsg6_*2e4u#d&e%5r*c5i6h0)fcp*4-o#z*lcng'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.liulilin.net' , '127.0.0.1' , 'localhost']
+ALLOWED_HOSTS = [
+    'www.liulilin.net',
+    '127.0.0.1',
+    'localhost',
+    ]
 
 
 # Application definition
@@ -125,6 +129,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
 
     os.path.join(BASE_DIR,'static'),
+)
+
+STATIC_ROOT = (
+    os.path.join(BASE_DIR, 'static').replace('\\','/')
+ 
 )
 
 LOGIN_REDIRECT_URL = '/blog/'
