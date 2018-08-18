@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     'www.liulilin.net',
     '127.0.0.1',
     'localhost',
+    '*',
     ]
 
 
