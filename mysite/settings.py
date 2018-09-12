@@ -122,11 +122,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #指定静态文件存放目录的位置
-STATICFILES_DIRS = (
+#STATICFILES_DIRS = (
 
-    os.path.join(BASE_DIR,'static'),
-)
+#    os.path.join(BASE_DIR,'static'),
+#)
 
-#STATIC_ROOT = 'static' 
+STATIC_ROOT = '/root/mysite/static' 
 
 LOGIN_REDIRECT_URL = '/blog/'
